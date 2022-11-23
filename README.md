@@ -11,3 +11,5 @@ The result demonstrated that earthquakes in Japan can be explained using both co
 In Japan, earthquakes frequently occur and cause devastating damage to infrastructure and human lives. For example, in 2000, there was a large-scaled earthquake which occurred in Tottori prefecture, Japan. About $150 million in damage was caused (with 104 buildings destroyed) and between 130-182 people were injured. This shows the importance of analyzing earthquake data.
 
 By using both relative intensity (conventional) and machine learning-based method, this preliminary study aims to utilize various method to analyze earthquake data in Japan. We also aim to prove the validity for machine learning method in earthquake analysis. 
+
+## Framework
