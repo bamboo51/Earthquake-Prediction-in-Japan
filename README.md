@@ -17,3 +17,11 @@ By using both relative intensity (conventional) and machine learning-based metho
 In this study, an earthquake dataset, which contains the time, locations, magnitude, and depth of each earthquake in Japan from 1985-2022, was obtained from Japan Meteorological Agency. 
 
 We first converted the date and time to the timestamp for better usability. To further understand the dataset, we then visualized these data in 3 ways. 
+1.	Locations of earthquake occurrences
+2.	The relationship between the number of occurrences and time
+3.	The relationship between the number of occurrences and magnitude (Gutenberg-Richter Law) is then also used to find the Gutenberg-Richter relationship in earthquakes. We calculated the logarithm base 10 of occurrences and approximate the relationship using linear regression.
+
+Then, we split the data for training each model. For the Relative Intensity Method (Conventional), we divided 70% of the data into the train set and 30% into the test set (time-sequential). For neural network, we normalized these data. Then, we separated data into X (timestamp, latitude, longitude) and Y (magnitude, depth). After that, we divided 80% of the data into the train set, 10% of the data into the test set, and 10% of the data into the validation set at random state=42.
+
+### Part 2: Relative Intensity Method (Conventional)
+The RI model measures past seismic activities in areas and is used to determine the potential for a new earthquake. We then define the study area (ranges from 30°N 128°E to 46°N 146°E) as a point with even spacing. The RI score, an index (ranges from 0 to 1) used in the RI method, is a min-max normalized Cumulative Benioff Strain of a point in the study area. The formula for Cumulative Benioff Strain at a time B_{xy}(t) is as follows.
