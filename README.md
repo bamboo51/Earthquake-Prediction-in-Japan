@@ -7,9 +7,13 @@ We then split data into the train set and the test set (80:20) in the Relative I
 
 The result demonstrated that earthquakes in Japan can be explained using both conventional and proposed models. Also, while both of our models have their advantages and drawbacks, they can analyze the data to a certain extent.
 
-# Introduction
+## Introduction
 In Japan, earthquakes frequently occur and cause devastating damage to infrastructure and human lives. For example, in 2000, there was a large-scaled earthquake which occurred in Tottori prefecture, Japan. About $150 million in damage was caused (with 104 buildings destroyed) and between 130-182 people were injured. This shows the importance of analyzing earthquake data.
 
 By using both relative intensity (conventional) and machine learning-based method, this preliminary study aims to utilize various method to analyze earthquake data in Japan. We also aim to prove the validity for machine learning method in earthquake analysis. 
 
 ## Framework
+### Part 1: Data Format and Data Visualization
+In this study, an earthquake dataset, which contains the time, locations, magnitude, and depth of each earthquake in Japan from 1985-2022, was obtained from Japan Meteorological Agency. 
+
+We first converted the date and time to the timestamp for better usability. To further understand the dataset, we then visualized these data in 3 ways. 
