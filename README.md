@@ -25,3 +25,5 @@ Then, we split the data for training each model. For the Relative Intensity Meth
 
 ### Part 2: Relative Intensity Method (Conventional)
 The RI model measures past seismic activities in areas and is used to determine the potential for a new earthquake. We then define the study area (ranges from 30°N 128°E to 46°N 146°E) as a point with even spacing. The RI score, an index (ranges from 0 to 1) used in the RI method, is a min-max normalized Cumulative Benioff Strain of a point in the study area. The formula for Cumulative Benioff Strain at a time $B_{xy}(t)$ is as follows.
+**Cumulative Benioff Strain**
+$B_{xy}\left(t\right)=\sum_{i=1}^{N_{xy}(t)}\sqrt{E_{xy}^{(i)}}$
