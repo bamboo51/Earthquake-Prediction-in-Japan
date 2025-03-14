@@ -58,6 +58,8 @@ $$MSE=\frac{1}{b}\sum_{i=1}^{b}\frac{\left(M_{pred}-M_{true}\right)^2+\left(D_{p
 
 Where $b$ is batch size, $M_{pred}$ is predicted magnitude, $M_{true}$ is true magnitude, $D_{pred}$ is predicted depth, and $D_{true}$ is true depth.
 
+> The idea and some part of code in this section is referenced from Mahadevmm, “Earthquake prediction,” <i>Kaggle</i>, Oct. 26, 2018. https://www.kaggle.com/code/mahadevmm9/earthquake-prediction. For better scientific consideration, other methods (such as analyzing P waves and S waves, locations etc.) should be considered.
+
 ## Finding and Discussion
 ### Part 1: Visualization
 At first, we plotted all occurrences of the earthquake in Japan from 1985 to 2022 as figure 2 below.
